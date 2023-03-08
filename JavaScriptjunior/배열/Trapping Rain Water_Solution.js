@@ -45,7 +45,7 @@ let trap=function(height){
     }
   }
 
-  console.log(sum);
+  
 
   // 
 

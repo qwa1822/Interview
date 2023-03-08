@@ -41,6 +41,7 @@ queue.enqueue(3)
 queue.dequeue()
 queue.dequeue()
 queue.enqueue(5)
+
 queue.enqueue(5)
 
 while(queue.getLength()!==0){

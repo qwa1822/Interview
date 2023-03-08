@@ -2,18 +2,16 @@ let fs=require('fs');
 let input=fs.readFileSync('/dev/stdin').toString().split('\n');
 
 
+
 let n=Number(input[0]);
-let scores=input[1].split(' ').map(Number);
+let arr=input[1].split(' ').map(Number);
 
+let maxvalue=arr.reduce((acc,cur)=>Math.max(acc,cur));
+let sum=[]
 
-let maxValue=scores.reduce((acc,cur)=>Math.max(acc,let maxValue=scores.reduce((acc,cur)=>Math.max(acc,b));
-));
-
-let updated=[];
 
 for(let i=0; i<n; i++){
-  updated.push(scores[i]/maxValue*100);
+  sum.push(arr[i]/maxvalue*100);
 }
 
-
-console.log(updated.reduce((a,b)=>a+b)/n);
+console.log(sum.reduce((a,b)=>a+b)/n);
